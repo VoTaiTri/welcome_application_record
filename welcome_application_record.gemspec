@@ -4,15 +4,28 @@ require "welcome_application_record/version"
 
 Gem::Specification.new do |spec|
   spec.name        = "welcome_application_record"
-  spec.version     = WelcomeApplicationRecord::VERSION
   spec.date        = "2019-08-07"
   spec.summary     = "Welcome ApplicationRecord"
   spec.description = "A simple gem which convert to extend ApplicationRecord instead to directly extend ActiveRecord::Base"
   spec.authors     = ["Tai Tri Vo"]
   spec.email       = ["votaitri.hust@gmail.com"]
-  spec.files       = ["lib/welcome_application_record.rb"]
+
+  spec.metadata    = {
+    "homepage_uri" => "https://github.com/VoTaiTri/welcome_application_record"
+  }
+  spec.version     = WelcomeApplicationRecord::VERSION
+
+  spec.files       = [
+    "welcome_application_record.gemspec",
+    ".gitignore",
+    "README.md",
+    "lib/welcome_application_record.rb",
+    "lib/welcome_application_record/version.rb",
+    "bin/welcome_application_record"
+  ]
+
   spec.executables << "welcome_application_record"
-  spec.homepage    = "https://rubygems.org/gems/welcome_application_record"
+  spec.homepage    = "https://github.com/VoTaiTri/welcome_application_record"
   spec.license     = "MIT"
   spec.require_paths = ["lib"]
 
